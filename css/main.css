@@ -2709,4 +2709,204 @@ html[dir=rtl] .calculator-form .calculator-input {
 }
 .calculator-accordion .result-item .value {
   color: var(--text-color);
+}
+
+.post-content {
+  width: 100%;
+  max-width: 1044px;
+  margin: auto;
+}
+.post-content .post-img {
+  width: 100%;
+  aspect-ratio: 1044/636;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+.post-content .post-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.post-content .post-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+@media (max-width: 767px) {
+  .post-content .post-head {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    margin-bottom: 16px;
+  }
+}
+.post-content .post-title {
+  font-size: 32px;
+  color: var(--primary-color);
+  line-height: 1.1875;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .post-content .post-title {
+    font-size: 30px;
+  }
+}
+.post-content .post-date {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  line-height: 1.4;
+  color: var(--text-color);
+  flex-shrink: 0;
+}
+.post-content .post-date svg {
+  stroke: var(--text-color);
+  margin-inline-end: 20px;
+}
+@media (max-width: 767px) {
+  .post-content .post-date {
+    font-size: 20px;
+    line-height: 1.5;
+    width: 100%;
+  }
+  .post-content .post-date svg {
+    margin-inline-end: 11px;
+  }
+}
+.post-content .post-description {
+  line-height: 1.4;
+  font-size: 25px;
+  color: var(--text-color);
+  text-align: justify;
+  padding-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .post-content .post-description {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+.post-content .post-description h3 {
+  font-weight: 700;
+  margin-bottom: 46px;
+}
+@media (max-width: 767px) {
+  .post-content .post-description h3 {
+    margin-bottom: 32px;
+  }
+}
+.post-content .post-description p {
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+@media (max-width: 767px) {
+  .post-content .post-description p {
+    margin-bottom: 24px;
+  }
+}
+.post-content .post-description :last-child {
+  margin: 0;
+}
+.post-content .post-share {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-top: 1px solid #c7c9ce;
+}
+@media (max-width: 767px) {
+  .post-content .post-share {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+.post-content .share-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1.5;
+  margin: 0;
+}
+.post-content .share-methods {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+@media (max-width: 767px) {
+  .post-content .share-methods {
+    gap: 16px;
+  }
+}
+.post-content .share-method {
+  font-size: 32px;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 767px) {
+  .post-content .share-method {
+    font-size: 24px;
+  }
+}
+.post-content .share-method:hover {
+  color: var(--primary-color);
+}
+.post-content .post-navs {
+  border-top: 1px solid #c7c9ce;
+  padding: 64px 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 64px;
+}
+@media (max-width: 767px) {
+  .post-content .post-navs {
+    gap: 0;
+    padding-top: 48px;
+  }
+}
+.post-content .nav-news {
+  width: calc(50% - 64px);
+  max-width: 360px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (max-width: 767px) {
+  .post-content .nav-news {
+    width: auto;
+  }
+}
+.post-content .nav-news .title {
+  font-size: 22px;
+  color: var(--text-color);
+  line-height: 1.5;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+.post-content .nav-news .title:hover {
+  color: var(--secondery-color);
+}
+.post-content .nav-news .value {
+  font-size: 25px;
+  color: var(--primary-color);
+  font-weight: 700;
+  line-height: 1.4;
+  transition: all 0.3s ease-in-out;
+}
+.post-content .nav-news .value:hover {
+  color: var(--secondery-color);
+}
+@media (max-width: 767px) {
+  .post-content .nav-news .value {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
