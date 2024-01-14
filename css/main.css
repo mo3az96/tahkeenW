@@ -2918,4 +2918,14 @@ html[dir=rtl] .calculator-form .calculator-input {
   .page-content .faq-list {
     margin: auto;
   }
+}
+
+.services-page {
+  background-color: #fafbf8;
+  padding: 64px 0;
+}
+@media (max-width: 993px) {
+  .services-page {
+    padding: 48px 0;
+  }
 }/*# sourceMappingURL=main.css.map */
