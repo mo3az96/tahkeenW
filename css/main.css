@@ -2909,4 +2909,13 @@ html[dir=rtl] .calculator-form .calculator-input {
   .post-content .nav-news .value {
     display: none;
   }
+}
+
+.page-content .faq-list {
+  margin-inline-end: 53px;
+}
+@media (max-width: 1299px) {
+  .page-content .faq-list {
+    margin: auto;
+  }
 }/*# sourceMappingURL=main.css.map */
