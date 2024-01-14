@@ -2928,4 +2928,261 @@ html[dir=rtl] .calculator-form .calculator-input {
   .services-page {
     padding: 48px 0;
   }
+}
+
+.search-content {
+  padding-bottom: 64px;
+}
+
+.search-form {
+  position: relative;
+  width: 100%;
+}
+.search-form .search-icon {
+  position: absolute;
+  top: 50%;
+  inset-inline-start: 18px;
+  transform: translateY(-50%);
+  stroke: #c7c9ce;
+  transition: all 0.3s ease-in-out;
+}
+.search-form .search-icon:hover {
+  stroke: var(--primary-color);
+}
+.search-form .search-btn {
+  position: absolute;
+  top: 50%;
+  inset-inline-end: 18px;
+  transform: translateY(-50%);
+  stroke: var(--secondery-color);
+  transition: all 0.3s ease-in-out;
+}
+.search-form .search-btn:hover {
+  stroke: var(--primary-color);
+}
+.search-form .search-input {
+  border: 1px solid #c7c9ce;
+  background-color: #fff;
+  border-radius: 8px;
+  height: 48px;
+  width: 100%;
+  color: var(--text-color);
+  font-size: 20px;
+  padding: 0 56px;
+  transition: all 0.3s ease-in-out;
+}
+.search-form .search-input::-moz-placeholder {
+  color: #aeb2b8;
+  font-size: 20px;
+  font-weight: 400;
+}
+.search-form .search-input::placeholder {
+  color: #aeb2b8;
+  font-size: 20px;
+  font-weight: 400;
+}
+.search-form .search-input:focus {
+  border-color: var(--primary-color);
+}
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px 16px;
+}
+@media (max-width: 1299px) {
+  .members-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 993px) {
+  .members-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.guide-member {
+  width: 100%;
+  overflow: hidden;
+  padding: 24px;
+  background-color: #fafbf8;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 993px) {
+  .guide-member {
+    max-width: 408px;
+    margin: auto;
+  }
+}
+@media (max-width: 767px) {
+  .guide-member {
+    padding: 16px;
+  }
+}
+.guide-member:hover {
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1490196078);
+}
+.guide-member .member-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .guide-member .member-head {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 16px;
+  }
+}
+.guide-member .member-img {
+  width: 80px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.guide-member .member-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.guide-member .head-text {
+  margin: 0 16px;
+}
+@media (max-width: 767px) {
+  .guide-member .head-text {
+    margin: 12px 0 0;
+  }
+}
+.guide-member .member-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1.22223;
+  margin: 0 0 8px;
+}
+.guide-member .member-name a {
+  color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+.guide-member .member-name a:hover {
+  color: var(--secondery-color);
+}
+.guide-member .member-email {
+  font-size: 18px;
+  line-height: 1.3888889;
+  color: #aeb2b8;
+  font-weight: 400;
+  margin: 0;
+}
+.guide-member .member-email a {
+  color: #aeb2b8;
+  transition: all 0.3s ease-in-out;
+}
+.guide-member .member-email a:hover {
+  color: var(--primary-color);
+}
+.guide-member .head-tools {
+  display: flex;
+  flex-direction: column;
+  margin-inline-start: auto;
+  gap: 24px;
+}
+@media (max-width: 767px) {
+  .guide-member .head-tools {
+    position: absolute;
+    top: 16px;
+    inset-inline-end: 0;
+  }
+}
+.guide-member .member-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+.guide-member .member-more:hover {
+  fill: var(--secondery-color);
+}
+.guide-member .member-share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+.guide-member .member-share:hover {
+  color: var(--secondery-color);
+}
+.guide-member .member-summary {
+  font-size: 16px;
+  line-height: 1.375;
+  color: var(--text-color);
+  height: 66px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0 0 24px;
+}
+@media (max-width: 767px) {
+  .guide-member .member-summary {
+    margin-bottom: 16px;
+  }
+}
+.guide-member .member-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-top: 1px solid #edeeef;
+  gap: 30px;
+  padding: 24px 0 0;
+}
+@media (max-width: 767px) {
+  .guide-member .member-footer {
+    padding-top: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 32px;
+  }
+}
+.guide-member .member-feature {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 16px;
+  color: var(--text-color);
+}
+.guide-member .member-feature svg {
+  margin-inline-end: 17px;
+  fill: var(--primary-color);
+}
+.guide-member .member-socials {
+  margin-inline-start: auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+@media (max-width: 767px) {
+  .guide-member .member-socials {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    gap: 16px;
+  }
+}
+.guide-member .member-social {
+  color: var(--primary-color);
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.guide-member .member-social:hover {
+  color: var(--secondery-color);
 }/*# sourceMappingURL=main.css.map */
