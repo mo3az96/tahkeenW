@@ -91,4 +91,20 @@ $(document).ready(function () {
       },
     },
   });
+
+  /************************************ Show Password ************************************/
+  $(".password-eye").click(function (e) {
+    if (e.isDefaultPrevented()) return;
+    e.preventDefault();
+    e.stopPropagation();
+    let eye = $(this);
+    let input = $(this).parents(".password-content").find("input.form-control");
+    if ($(input).attr("type") == "password") {
+      $(input).attr("type", "text");
+      eye.addClass("active");
+    } else {
+      $(input).attr("type", "password");
+      eye.removeClass("active");
+    }
+  });
 });

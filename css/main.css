@@ -1630,6 +1630,17 @@ html[dir=rtl] .newsletter-content .newsletter-input {
   }
 }
 
+.form-line {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 16px;
+}
+@media (max-width: 993px) {
+  .form-line {
+    grid-template-columns: 1fr;
+  }
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -1651,7 +1662,7 @@ html[dir=rtl] .newsletter-content .newsletter-input {
   order: 3;
 }
 .form-error ~ .form-control,
-.form-error :has(.form-control) .form-control {
+.form-error ~ :has(.form-control) .form-control {
   border-color: red;
 }
 
@@ -1681,10 +1692,49 @@ html[dir=rtl] .form-control {
 }
 .form-control:focus {
   border-color: var(--primary-color);
+  outline: none;
+  box-shadow: none;
 }
 .form-control:disabled {
   background-color: #fafbf8;
   border-color: #fafbf8;
+}
+
+.submit-btn {
+  margin: 64px auto 0;
+}
+@media (max-width: 993px) {
+  .submit-btn {
+    margin-top: 32px;
+  }
+}
+
+.password-content {
+  position: relative;
+}
+.password-content .password-eye {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  inset-inline-end: 12px;
+  stroke: var(--secondery-color);
+  fill: var(--secondery-color);
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.password-content .password-eye .show {
+  display: block;
+}
+.password-content .password-eye .hide {
+  display: none;
+}
+.password-content .password-eye.active .show {
+  display: none;
+}
+.password-content .password-eye.active .hide {
+  display: block;
 }
 
 header {
@@ -3790,4 +3840,10 @@ html[dir=rtl] .calculator-form .calculator-input {
   line-height: 1.375;
   text-decoration: underline;
   margin-top: 45px;
+}
+
+.account-profile {
+  width: 100%;
+  max-width: 1044px;
+  margin: auto;
 }/*# sourceMappingURL=main.css.map */
