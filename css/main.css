@@ -1672,7 +1672,7 @@ html[dir=rtl] .newsletter-content .newsletter-input {
   border-radius: 8px;
   background-color: #fff;
   border: 1px solid #c7c9ce;
-  color: var(--secondery-color);
+  color: var(--text-color);
   font-size: 16px;
   font-weight: 400;
   transition: all 0.3s ease-in-out;
@@ -1735,6 +1735,21 @@ html[dir=rtl] .form-control {
 }
 .password-content .password-eye.active .hide {
   display: block;
+}
+
+.date-content {
+  position: relative;
+}
+.date-content svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  inset-inline-end: 12px;
+  stroke: var(--secondery-color);
+  fill: var(--secondery-color);
+  display: flex;
+  align-items: center;
 }
 
 header {
@@ -4007,4 +4022,192 @@ html[dir=rtl] .calculator-form .calculator-input {
 .case-item .case-status.reject {
   color: #d0402d;
   background-color: #faecea;
+}
+
+.case-row {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 16px;
+  align-items: start;
+}
+@media (max-width: 993px) {
+  .case-row {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.case-side {
+  position: sticky;
+  top: 25px;
+}
+@media (max-width: 993px) {
+  .case-side {
+    position: static;
+    inset: unset;
+  }
+}
+.case-side .side-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 13px 16px;
+}
+@media (max-width: 993px) {
+  .case-side .side-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .case-side .side-list {
+    grid-template-columns: 1fr;
+  }
+}
+.case-side a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 48px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text-color);
+  border: 1px solid #c7c9ce;
+  transition: all 0.3s ease-in-out;
+}
+.case-side a span {
+  width: 24px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: var(--text-color);
+  line-height: 1;
+}
+.case-side a:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.case-side a.active {
+  color: #fff;
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+}
+.case-side a.active span {
+  background-color: #fff;
+  color: var(--secondery-color);
+}
+
+.case-content .more-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 64px;
+}
+@media (max-width: 993px) {
+  .case-content .more-content {
+    margin-top: 48px;
+  }
+}
+.case-content .more-content a {
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--primary-color);
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+.case-content .more-content a:hover {
+  color: var(--secondery-color);
+}
+
+.case-information .form-line {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 993px) {
+  .case-information .form-line {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .case-information .form-line {
+    grid-template-columns: 1fr;
+  }
+}
+
+.caseMembers-grid {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 1299px) {
+  .caseMembers-grid {
+    gap: 16px 8px;
+  }
+}
+@media (max-width: 767px) {
+  .caseMembers-grid {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+  }
+}
+
+.caseMember {
+  background: #fafbf8;
+  border-radius: 8px;
+  padding: 24px;
+}
+@media (max-width: 1299px) {
+  .caseMember {
+    padding: 16px;
+  }
+}
+.caseMember .member-name {
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--secondery-color);
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+@media (max-width: 1299px) {
+  .caseMember .member-name {
+    font-size: 18px;
+    margin: 0 0 16px;
+  }
+}
+.caseMember .member-description {
+  color: var(--primary-color);
+  font-size: 22px;
+  line-height: 1.31818181;
+  margin: 0 0 24px;
+}
+@media (max-width: 1299px) {
+  .caseMember .member-description {
+    font-size: 18px;
+    margin: 0 0 16px;
+  }
+}
+.caseMember .member-description span {
+  color: var(--text-color);
+}
+.caseMember .member-email {
+  font-size: 22px;
+  line-height: 1.5;
+}
+@media (max-width: 1299px) {
+  .caseMember .member-email {
+    font-size: 18px;
+  }
+}
+.caseMember .member-email span {
+  color: var(--text-color);
+}
+.caseMember .member-email a {
+  color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+.caseMember .member-email a:hover {
+  color: var(--secondery-color);
 }/*# sourceMappingURL=main.css.map */
