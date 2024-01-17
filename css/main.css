@@ -4084,7 +4084,8 @@ html[dir=rtl] .calculator-form .calculator-input {
   justify-content: center;
   color: #fff;
   background-color: var(--text-color);
-  line-height: 1;
+  line-height: 0.5;
+  padding: 4px 0 0;
 }
 .case-side a:hover {
   border-color: var(--primary-color);
@@ -4210,4 +4211,92 @@ html[dir=rtl] .calculator-form .calculator-input {
 }
 .caseMember .member-email a:hover {
   color: var(--secondery-color);
+}
+
+.case-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 1299px) {
+  .case-facts {
+    gap: 16px 8px;
+  }
+}
+@media (max-width: 767px) {
+  .case-facts {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+  }
+}
+
+.case-fact {
+  background: #fafbf8;
+  border-radius: 8px;
+  padding: 24px;
+  position: relative;
+}
+@media (max-width: 1299px) {
+  .case-fact {
+    padding: 16px;
+  }
+}
+.case-fact .fact-title {
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--secondery-color);
+  font-weight: 700;
+  padding-inline-end: 48px;
+  margin: 0 0 24px;
+}
+@media (max-width: 1299px) {
+  .case-fact .fact-title {
+    font-size: 18px;
+    margin: 0 0 16px;
+  }
+}
+.case-fact .fact-features {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px 16px;
+}
+.case-fact .fact-feature {
+  color: var(--primary-color);
+  font-size: 22px;
+  line-height: 1.31818181;
+  margin: 0;
+  min-width: calc(50% - 16px);
+}
+@media (max-width: 1299px) {
+  .case-fact .fact-feature {
+    font-size: 18px;
+    margin: 0 0 16px;
+  }
+}
+.case-fact .fact-feature span {
+  color: var(--text-color);
+}
+.case-fact .fact-view {
+  position: absolute;
+  top: 24px;
+  inset-inline-end: 24px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--primary-color);
+  stroke: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+.case-fact .fact-view:hover {
+  fill: var(--secondery-color);
+  stroke: var(--secondery-color);
+}
+@media (max-width: 1299px) {
+  .case-fact .fact-view {
+    top: 16px;
+    inset-inline-end: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */
