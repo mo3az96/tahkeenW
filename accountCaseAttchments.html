@@ -165,40 +165,40 @@
           <div class="case-side">
             <ul class="side-list list-unstyled">
               <li>
-                <a href="accountCase1.html"> البيانات الأساسية </a>
+                <a href="accountCaseMainInformation.html"> البيانات الأساسية </a>
               </li>
               <li>
-                <a href="accountCase2.html">
+                <a href="accountCaseFacts.html">
                   الوقائع
                   <span>5</span>
                 </a>
               </li>
               <li>
-                <a href="accountCase3.html">
+                <a href="accountCaseParties.html">
                   الأطراف
                   <span>5</span>
                 </a>
               </li>
               <li>
-                <a href="accountCase4.html" class="active">
+                <a href="accountCaseCalendar.html">
                   التذكيرات
                   <span>5</span>
                 </a>
               </li>
               <li>
-                <a href="accountCase5.html">
+                <a href="accountCaseReports.html">
                   التبليغات
                   <span>5</span>
                 </a>
               </li>
               <li>
-                <a href="accountCase6.html">
+                <a href="accountCaseAttchments.html" class="active">
                   المرفقات الإجرائية
                   <span>5</span>
                 </a>
               </li>
               <li>
-                <a href="accountCase7.html">
+                <a href="accountCaseFinancess.html">
                   الماليات
                   <span>5</span>
                 </a>
@@ -206,7 +206,48 @@
             </ul>
           </div>
           <div class="case-content">
-            <div id="calendar"></div>
+            <div class="case-attchments">
+              <div class="case-attchment">
+                <h3 class="attchment-title">
+                  صورة الهوية - السيد / احمد فيصل صائب سلام.png
+                </h3>
+                <a href="#!" class="attchment-download" download>
+                  <img src="images/icons/download.svg" class="svg" />
+                </a>
+              </div>
+              <div class="case-attchment">
+                <h3 class="attchment-title">
+                  صورة الهوية - السيد / احمد فيصل صائب سلام.png
+                </h3>
+                <a href="#!" class="attchment-download" download>
+                  <img src="images/icons/download.svg" class="svg" />
+                </a>
+              </div>
+              <div class="case-attchment">
+                <h3 class="attchment-title">
+                  صورة الهوية - السيد / احمد فيصل صائب سلام.png
+                </h3>
+                <a href="#!" class="attchment-download" download>
+                  <img src="images/icons/download.svg" class="svg" />
+                </a>
+              </div>
+              <div class="case-attchment">
+                <h3 class="attchment-title">
+                  صورة الهوية - السيد / احمد فيصل صائب سلام.png
+                </h3>
+                <a href="#!" class="attchment-download" download>
+                  <img src="images/icons/download.svg" class="svg" />
+                </a>
+              </div>
+              <div class="case-attchment">
+                <h3 class="attchment-title">
+                  صورة الهوية - السيد / احمد فيصل صائب سلام.png
+                </h3>
+                <a href="#!" class="attchment-download" download>
+                  <img src="images/icons/download.svg" class="svg" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -293,29 +334,5 @@
     <script src="js/lazyload.js"></script>
     <script src="js/main.js"></script>
     <script src="js/svg.js"></script>
-
-    <script src="js/calendar/index.global.min.js"></script>
-    <script src="js/calendar/ar.global.min.js"></script>
-    <script>
-      
-      document.addEventListener("DOMContentLoaded", function () {
-        var calendarEl = document.getElementById("calendar");
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-          locale: document.dir == "rtl" ? "ar" : "en",
-          direction: document.dir == "rtl" ? "rtl" : "ltr",
-          events: [
-            {
-              title: "my event",
-              start: "2024-01-04",
-            },
-            {
-              title: "my second event",
-              start: "2024-02-01",
-            },
-          ],
-        });
-        calendar.render();
-      });
-    </script>
   </body>
 </html>

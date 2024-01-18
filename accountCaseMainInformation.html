@@ -165,40 +165,42 @@
           <div class="case-side">
             <ul class="side-list list-unstyled">
               <li>
-                <a href="accountCase1.html"> البيانات الأساسية </a>
+                <a href="accountCaseMainInformation.html" class="active">
+                  البيانات الأساسية
+                </a>
               </li>
               <li>
-                <a href="accountCase2.html">
+                <a href="accountCaseFacts.html">
                   الوقائع
                   <span>5</span>
                 </a>
               </li>
               <li>
-                <a href="accountCase3.html" class="active">
+                <a href="accountCaseParties.html">
                   الأطراف
                   <span>5</span>
                 </a>
               </li>
               <li>
-                <a href="accountCase4.html">
+                <a href="accountCaseCalendar.html">
                   التذكيرات
                   <span>5</span>
                 </a>
               </li>
               <li>
-                <a href="accountCase5.html">
+                <a href="accountCaseReports.html">
                   التبليغات
                   <span>5</span>
                 </a>
               </li>
               <li>
-                <a href="accountCase6.html">
+                <a href="accountCaseAttchments.html">
                   المرفقات الإجرائية
                   <span>5</span>
                 </a>
               </li>
               <li>
-                <a href="accountCase7.html">
+                <a href="accountCaseFinancess.html">
                   الماليات
                   <span>5</span>
                 </a>
@@ -206,63 +208,211 @@
             </ul>
           </div>
           <div class="case-content">
-            <div class="case-parties">
-              <div class="case-party">
-                <h3 class="party-title">
-                  <a href="accountCaseParty.html">
-                    السادة / شركة مطاعم حصة البحر لتقديم الوجبات
-                  </a>
-                </h3>
-                <a href="#!" class="party-more">
-                  <img src="images/icons/dots.svg" class="svg" />
-                </a>
-                <div class="party-information">
-                  <div class="party-features">
-                    <div class="party-feature"><span>الصفة:</span> محتكم</div>
-                    <div class="party-feature">
-                      <span>يوجد وكيل:</span> نعم (2)
-                    </div>
+            <div class="case-information">
+              <div class="form-group">
+                <label class="form-label">اسم القضية</label>
+                <input
+                  type="text"
+                  disabled
+                  readonly
+                  class="form-control"
+                  value="السادة / شركة مطاعم حصة البحر لتقديم الوجبات"
+                />
+              </div>
+              <div class="form-line">
+                <div class="form-group">
+                  <label class="form-label">رقم الطلب</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    readonly
+                    disabled
+                    value="r-2301"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">نوع القضية</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    readonly
+                    disabled
+                    value="تجارية"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">حالة الطلب</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    readonly
+                    disabled
+                    value="الطلب قيد المراجعة"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">تاريخ تقديم الدعوة</label>
+                  <div class="date-content">
+                    <img src="images/icons/calendar.svg" class="svg" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      readonly
+                      disabled
+                      value="2023/02/18"
+                    />
                   </div>
-                  <span class="party-status"> يحضر الجلسات </span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">تاريخ بداية القضية</label>
+                  <div class="date-content">
+                    <img src="images/icons/calendar.svg" class="svg" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      readonly
+                      disabled
+                      value="2023/02/18"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">تاريخ نهاية القضية</label>
+                  <div class="date-content">
+                    <img src="images/icons/calendar.svg" class="svg" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      readonly
+                      disabled
+                      value="2023/02/18"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">تاريخ تقديم الدعوة</label>
+                  <div class="date-content">
+                    <img src="images/icons/calendar.svg" class="svg" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      readonly
+                      disabled
+                      value="2023/02/18"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">تاريخ بداية القضية</label>
+                  <div class="date-content">
+                    <img src="images/icons/calendar.svg" class="svg" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      readonly
+                      disabled
+                      value="2023/02/18"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">تاريخ نهاية القضية</label>
+                  <div class="date-content">
+                    <img src="images/icons/calendar.svg" class="svg" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      readonly
+                      disabled
+                      value="2023/02/18"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">نوع التحكيم</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    readonly
+                    disabled
+                    value="متعدد"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">مدة التحكيم</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    readonly
+                    disabled
+                    value="1 يوماً"
+                  />
                 </div>
               </div>
-              <div class="case-party">
-                <h3 class="party-title">
-                  <a href="accountCaseParty.html">
-                    السادة / شركة مطاعم حصة البحر لتقديم الوجبات
-                  </a>
-                </h3>
-                <a href="#!" class="party-more">
-                  <img src="images/icons/dots.svg" class="svg" />
-                </a>
-                <div class="party-information">
-                  <div class="party-features">
-                    <div class="party-feature">
-                      <span>الصفة:</span> محتكم ضده
-                    </div>
-                    <div class="party-feature"><span>يوجد وكيل:</span> لا</div>
+              <div class="form-group">
+                <label class="form-label">القانون واجب التنفيذ</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  readonly
+                  disabled
+                  value="القانون واجب التنفيذ القانون واجب التنفيذ القانون واجب التنفيذ القانون واجب التنفيذ القانون واجب التنفيذ "
+                />
+              </div>
+              <div class="caseMembers-grid">
+                <div class="caseMember">
+                  <h3 class="member-name">السيد / احمد فيصل صائب سلام</h3>
+                  <p class="member-description">
+                    <span>الصفة:</span> مسئول بموجب السجل التجارى عن شركة الامان
+                    الجديدة للتجارة
+                  </p>
+                  <div class="member-email">
+                    <span> البريد الإلكترونى: </span>
+                    <a href="mailto:info@Alamanntc.com">info@Alamanntc.com</a>
                   </div>
-                  <span class="party-status"> يحضر الجلسات </span>
+                </div>
+                <div class="caseMember">
+                  <h3 class="member-name">المحامي / احمد عيد هريس العتيبي</h3>
+                  <p class="member-description">
+                    <span>الصفة:</span> وكيل المحتكم السادة / شركة الامان
+                    الجديدة للتجارة
+                  </p>
+                  <div class="member-email">
+                    <span> البريد الإلكترونى: </span>
+                    <a href="mailto:a7medeiiid@gmail.com"
+                      >a7medeiiid@gmail.com</a
+                    >
+                  </div>
+                </div>
+                <div class="caseMember">
+                  <h3 class="member-name">الاستاذ / محمد ابراهيم علي شاولي</h3>
+                  <p class="member-description">
+                    <span>الصفة:</span> الصفة: مسئول بموجب السجل التجارى عن شركة
+                    ميلان عود المحدودة
+                  </p>
+                  <div class="member-email">
+                    <span> البريد الإلكترونى: </span>
+                    <a href="mailto:alshawli@yahoo.com">alshawli@yahoo.com</a>
+                  </div>
+                </div>
+                <div class="caseMember">
+                  <h3 class="member-name">المحامي / ياسين خالد ياسين خياط</h3>
+                  <p class="member-description">
+                    <span>الصفة:</span> وكيل المحتكم ضده السادة / شركة ميلان عود
+                    المحدودة
+                  </p>
+                  <div class="member-email">
+                    <span> البريد الإلكترونى: </span>
+                    <a href="mailto:y.khayyat@khayyatlaw.com"
+                      >y.khayyat@khayyatlaw.com</a
+                    >
+                  </div>
                 </div>
               </div>
-              <div class="case-party">
-                <h3 class="party-title">
-                  <a href="accountCaseParty.html">
-                    السادة / شركة مطاعم حصة البحر لتقديم الوجبات
-                  </a>
-                </h3>
-                <a href="#!" class="party-more">
-                  <img src="images/icons/dots.svg" class="svg" />
+              <div class="more-content">
+                <a href="#!">
+                    المزيد
                 </a>
-                <div class="party-information">
-                  <div class="party-features">
-                    <div class="party-feature">
-                      <span>الصفة:</span> هيئة تحكيم
-                    </div>
-                    <div class="party-feature"><span>يوجد وكيل:</span> لا</div>
-                  </div>
-                  <span class="party-status"> يحضر الجلسات </span>
-                </div>
               </div>
             </div>
           </div>
