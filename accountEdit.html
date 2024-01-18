@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/toastr.min.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -174,9 +175,12 @@
                 </a>
               </h6>
             </div>
-            <a href="accountPassword.html" class="priamry-btn">
+            <!-- <a href="accountPassword.html" class="priamry-btn">
               تغيير كلمة المرور
-            </a>
+            </a> -->
+            <button onclick="toastr.info('<a href=\'accountPassword.html\'>لتغيير كلمة المرور اضغط هنا</a>')" class="priamry-btn">
+              تغيير كلمة المرور
+            </button>
           </div>
           <div class="account-profile">
             <form>
@@ -210,7 +214,18 @@
                   <input type="text" class="form-control" value="الرياض" />
                 </div>
               </div>
-              <button type="submit" class="priamry-btn submit-btn">حفظ</button>
+              <!-- <button type="submit" class="priamry-btn submit-btn">حفظ</button> -->
+              <button
+                type="button"
+                class="priamry-btn submit-btn"
+                onclick="toastr.success('تم التعديل بنجاح')"
+              >
+                حفظ
+              </button>
+              <!-- toastr.success('تم التعديل بنجاح')
+              toastr.info('تم التعديل بنجاح')
+              toastr.warning('تم التعديل بنجاح')
+              toastr.error('تم التعديل بنجاح') -->
             </form>
           </div>
         </div>
@@ -296,6 +311,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/lazyload.js"></script>
+    <script src="js/toastr.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/svg.js"></script>
   </body>
