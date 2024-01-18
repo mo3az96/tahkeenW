@@ -4848,4 +4848,87 @@ html[dir=rtl] .calculator-form .calculator-input {
     width: 160px;
     font-size: 18px;
   }
+}
+
+.case-attchments {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 1299px) {
+  .case-attchments {
+    gap: 16px 8px;
+  }
+}
+@media (max-width: 767px) {
+  .case-attchments {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+  }
+}
+
+.case-attchment {
+  padding: 24px;
+  background-color: #fafbf8;
+  border-radius: 8px;
+  position: relative;
+}
+@media (max-width: 1299px) {
+  .case-attchment {
+    padding: 16px;
+  }
+}
+@media (max-width: 993px) {
+  .case-attchment {
+    width: 100%;
+    max-width: 461px;
+    margin: auto;
+  }
+}
+.case-attchment .attchment-title {
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--secondery-color);
+  font-weight: 700;
+  margin: 0 0;
+  padding-inline-end: 64px;
+}
+.case-attchment .attchment-title a {
+  color: var(--secondery-color);
+  transition: all 0.3s ease-in-out;
+}
+.case-attchment .attchment-title a:hover {
+  color: var(--primary-color);
+}
+@media (max-width: 1299px) {
+  .case-attchment .attchment-title {
+    font-size: 18px;
+    padding-inline-end: 48px;
+  }
+}
+.case-attchment .attchment-download {
+  position: absolute;
+  top: 24px;
+  inset-inline-end: 24px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--primary-color);
+  stroke: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+.case-attchment .attchment-download svg {
+  width: 20px;
+}
+.case-attchment .attchment-download:hover {
+  fill: var(--secondery-color);
+  stroke: var(--secondery-color);
+}
+@media (max-width: 1299px) {
+  .case-attchment .attchment-download {
+    top: 16px;
+    inset-inline-end: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */
