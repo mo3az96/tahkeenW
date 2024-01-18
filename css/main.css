@@ -4727,4 +4727,125 @@ html[dir=rtl] .calculator-form .calculator-input {
   background-color: var(--secondery-color);
   color: #fff;
   stroke: #fff;
+}
+
+.case-reports {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 1299px) {
+  .case-reports {
+    gap: 16px 8px;
+  }
+}
+@media (max-width: 767px) {
+  .case-reports {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+  }
+}
+
+.case-report {
+  padding: 24px;
+  background-color: #fafbf8;
+  border-radius: 8px;
+  position: relative;
+}
+@media (max-width: 1299px) {
+  .case-report {
+    padding: 16px;
+  }
+}
+@media (max-width: 993px) {
+  .case-report {
+    width: 100%;
+    max-width: 461px;
+    margin: auto;
+  }
+}
+.case-report .report-title {
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--secondery-color);
+  font-weight: 700;
+  margin: 0 0 24px;
+  padding-inline-end: 48px;
+}
+.case-report .report-title a {
+  color: var(--secondery-color);
+  transition: all 0.3s ease-in-out;
+}
+.case-report .report-title a:hover {
+  color: var(--primary-color);
+}
+@media (max-width: 1299px) {
+  .case-report .report-title {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+}
+.case-report .report-more {
+  position: absolute;
+  top: 24px;
+  inset-inline-end: 24px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+.case-report .report-more svg {
+  width: 16px;
+}
+.case-report .report-more:hover {
+  fill: var(--secondery-color);
+}
+@media (max-width: 1299px) {
+  .case-report .report-more {
+    top: 16px;
+    inset-inline-end: 16px;
+  }
+}
+.case-report .report-information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.case-report .report-information span {
+  line-height: 1.318181819;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.case-report .report-download {
+  width: 100%;
+  max-width: 175px;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  stroke: var(--secondery-color);
+  fill: var(--secondery-color);
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+.case-report .report-download:hover {
+  background-color: #b6e8d5;
+  color: var(--primary-color);
+  fill: var(--primary-color);
+  stroke: var(--primary-color);
+}
+@media (max-width: 1299px) {
+  .case-report .report-download {
+    width: 160px;
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=main.css.map */
